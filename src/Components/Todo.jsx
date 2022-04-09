@@ -170,7 +170,7 @@ const deleteTask =(id)=>{
 
 
   console.log(`Delete id is ${id}`)
-  Axios.delete(`https://mern-crud-todo-server.herokuapp.com/${id}`)
+  Axios.delete(`https://mern-crud-todo-server.herokuapp.com/delete/${id}`)
   .then((response)=>
   {
     alert('Selected Task deleted!')
